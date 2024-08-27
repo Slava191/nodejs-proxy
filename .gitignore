@@ -1,0 +1,58 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Operating system files
+Thumbs.db
+ehthumbs.db
+
+# Miscellaneous
+.sass-cache/
+connect.lock
+coverage/
+typings/
+.dist/
+dist/
+tmp/
+temp/
+*.pid
+*.seed
+*.pid.lock
+
+# Build directories
+build/
+public/
+
+# Dependency directories
+jspm_packages/
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Optional npm cache directory and Next.js output
+.npm/
+.next/
+
+# Exported assets
+out/
+
+# Serverless Framework
+.serverless/
