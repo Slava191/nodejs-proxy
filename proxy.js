@@ -25,8 +25,6 @@ app.use(async (req, res) => {
       body: req.body
     };
 
-    console.log(options);
-
     const response = await axios(options);
 
     res.status(response.status).send(response.data);
