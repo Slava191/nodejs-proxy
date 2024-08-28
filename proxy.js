@@ -9,6 +9,8 @@ require('dotenv').config()
 
 const targetUrl = process.env.TARGET_URL;
 
+app.use(express.json())
+
 app.use(cors())
 
 app.use(async (req, res) => {
