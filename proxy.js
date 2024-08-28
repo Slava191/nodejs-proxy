@@ -19,8 +19,11 @@ app.use(async (req, res) => {
       method: req.method,
       headers: { ...req.headers, host: new URL(targetUrl).host },
       url: url,
-      data: req.body
+      data: req.body,
+      body: req.body
     };
+
+    console.log(options);
 
     const response = await axios(options);
 
