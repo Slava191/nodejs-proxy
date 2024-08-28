@@ -1,6 +1,8 @@
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
+const https = require('https');
+const httpsOptions = require('./https-options');
 const app = express();
 
 require('dotenv').config()
@@ -33,6 +35,7 @@ app.use(async (req, res) => {
 });
 
 const port = process.env.PORT;
-app.listen(port, () => {
+
+https.createServer(httpsOptions, app).listen(port, () => {
   console.log(`Proxy server is running on port ${port}`);
 });
